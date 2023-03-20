@@ -1,0 +1,211 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Star X HUB",
+    LoadingTitle = "Stay in the discord the key changes!",
+    LoadingSubtitle = "by Star X",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, 
+       FileName = "Star X"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "https://discord.gg/YyYKGdjMHs", 
+       RememberJoins = true 
+    },
+    KeySystem = true, 
+    KeySettings = {
+       Title = "Star X key system",
+       Subtitle = "Key System",
+       Note = "Join the discord (https://discord.gg/YyYKGdjMHs)",
+       FileName = "StarXKey",
+       SaveKey = false,
+       GrabKeyFromSite = false, 
+       Key = "YouaresodumbIQ21"
+    }
+ })
+
+ local PlayerTab = Window:CreateTab("Games", 4483362458)
+
+ local Section = PlayerTab:CreateSection("Game op GUIS")
+
+ Rayfield:Notify({
+    Title = "Welcome!",
+    Content = "Welcome to Star X this is a W.I.P for now",
+    Duration = 10.5,
+    Image = 4483362458,
+    Actions = { 
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+ local ColorPicker = PlayerTab:CreateColorPicker({
+    Name = "Color Picker",
+    Color = Color3.fromRGB(255,255,255),
+    Flag = "ColorPicker1", 
+    Callback = function(Value)
+        
+        
+    end
+})
+
+local Button = PlayerTab:CreateButton({
+   Name = "Infinite yield",
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = PlayerTab:CreateButton({
+    Name = "CMD-X",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Rizz gui",
+    Callback = function()
+        for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+            if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+            game:GetService("RunService").Heartbeat:connect(function()
+            v.Velocity = Vector3.new(0,35,0)
+            wait(0.5)
+            end)
+            end
+            end
+            
+            game:GetService("StarterGui"):SetCore("SendNotification", { 
+                Title = "Notification";
+                Text = "Netless activated";
+                Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+            Duration = 16;
+            loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))() 
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Netless",
+    Callback = function()
+        for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+            if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+            game:GetService("RunService").Heartbeat:connect(function()
+            v.Velocity = Vector3.new(0,35,0)
+            wait(0.5)
+            end)
+            end
+            end
+            
+            game:GetService("StarterGui"):SetCore("SendNotification", { 
+                Title = "Notification";
+                Text = "Netless activated";
+                Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+            Duration = 16;
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "CHAT GBT",
+    Callback = function()
+        local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local idioma = "en" 
+
+local chatfuel = "True" 
+
+
+
+local function mensajepro(mensaje, jugador) 
+    local texto = mensaje
+    local Responde = game:HttpGet("https://api.simsimi.net/v2/?text="..texto.."&lc="..idioma.."&cf="..chatfuel) 
+    local datos = HttpService:JSONDecode(Responde)
+    
+   wait()
+   
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(jugador.." "..datos.success, "All") 
+end
+
+
+Players.PlayerChatted:Connect(function(type, plr, message) 
+    for _,plrs in pairs(game.Players:GetPlayers()) do
+ 
+ if (Players.LocalPlayer.Character.HumanoidRootPart.Position - plrs.Character.HumanoidRootPart.Position).magnitude <= 10 then 
+  if plr.Name == plrs.Name then
+      mensajepro(message, plr.Name) 
+  end
+ end
+ 
+end
+end)
+    end,
+ })
+
+ local Section = PlayerTab:CreateSection("Games")
+
+ local Button = PlayerTab:CreateButton({
+    Name = "DA HOOD",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Bedwars VAPE V4",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Starving-Artist",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jeux45/Starving-Artist-script/main/Script", true))()
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Blox fruits",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end,
+ })
+
+ local PlayerTab = Window:CreateTab("Script HUBS", 4483362458)
+
+ local Section = PlayerTab:CreateSection("HUBS")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rayfield:LoadConfiguration()
