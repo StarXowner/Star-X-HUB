@@ -25,6 +25,29 @@ local Window = Rayfield:CreateWindow({
        Key = "Getalife"
     }
  })
+ 
+ local PlayerTab = Window:CreateTab("Updates", 4483362458)
+ 
+    local Button = PlayerTab:CreateButton({
+    Name = "Added update tab",
+    Callback = function()
+        
+    end,
+ })
+ 
+     local Button = PlayerTab:CreateButton({
+    Name = "Added more games",
+    Callback = function()
+        
+    end,
+ })
+ 
+     local Button = PlayerTab:CreateButton({
+    Name = "Changed key",
+    Callback = function()
+        
+    end,
+ })
 
  local PlayerTab = Window:CreateTab("Games", 4483362458)
 
@@ -212,7 +235,12 @@ end)
 
  local Section = PlayerTab:CreateSection("HUBS")
 
-
+   local Button = PlayerTab:CreateButton({
+    Name = "THUNDER Z",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
+    end,
+ })
 
 
 
