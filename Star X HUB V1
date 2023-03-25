@@ -174,9 +174,39 @@ end)
  local Button = PlayerTab:CreateButton({
     Name = "Blox fruits",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KudoCon/DestinyHub/main/DestinyKey%22))()
     end,
  })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "Build a boat",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt%22))()
+    end,
+ })
+ 
+  local Button = PlayerTab:CreateButton({
+    Name = "Doors",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/KindIhave/ChibaHubcomeback/main/Chiba-Doors.txt%27),true))()
+    end,
+ })
+ 
+  local Button = PlayerTab:CreateButton({
+    Name = "Saitama Battlegrounds",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime%22))()
+    end,
+ })
+ 
+   local Button = PlayerTab:CreateButton({
+    Name = "Saitama Battlegrounds",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime%22))()
+    end,
+ })
+ 
+
 
  local PlayerTab = Window:CreateTab("Script HUBS", 4483362458)
 
