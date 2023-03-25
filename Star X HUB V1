@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
        FileName = "StarXKey",
        SaveKey = false,
        GrabKeyFromSite = false, 
-       Key = "YouaresodumbIQ21"
+       Key = "Getalife"
     }
  })
 
